@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Contact Us</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="quiz.css">
+  <script src="quiz.js"> </script>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span> </span>
+            </label>
+    
+            <ul class="menu__box">
+              <li><a class="menu__item" href="index.html">Home</a></li>
+              <li><a class="menu__item" href="quiz.html">Quiz</a></li>
+              <li><a class="menu__item" href="contact.html">Contact Us</a></li>
+              <li><a class="menu__item" href="feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+          <h1> <a class="logo" href="index.html"> Quiz Hub</a></h1>
+        </div>
+      </nav>
+      <div class="contactUs">
+      <h3>GET IN TOUCH!</h3>
+      <h1>How can we help you?</h1>
+    </div>
+    <form action="contact-confirmation.html"> 
+      <div class="contact-container">
+        <label for="name"> Name <span class="required">*</span></label>
+        <input type="text" placeholder="Your Name" required/>
+        <label for="email"> E-mail <span class="required">*</span></label>
+        <input type="email" placeholder="E-Mail" required aria-required />
+        <label for="message"> Comment <span class="required">*</span></label>
+        <textarea cols="30" rows="6" placeholder="Type Your Message" required></textarea>
+        <button class="btn-contact">Send message</button>
+        <!-- Reference: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+      </div>
+    </form>
+      <footer id="footer">
+              <div class="footer_links"> 
+            <a class="menu_link" href="index.html">Home</a>
+            <a class="menu_link" href="quiz.html">Quiz</a>
+            <a class="menu_link" href="contact.html">Contact Us</a>
+            <a class="menu_link" href="feedback.html">Feedback</a>
+        </div>
+        <div class="footer_copyright">@2022 Quiz Hub</div>
+        <div style="clear: both;"></div>
+      </footer>
+  </body>
+</html>
