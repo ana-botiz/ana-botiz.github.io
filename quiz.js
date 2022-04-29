@@ -170,7 +170,7 @@ function loadNextQuestion() {
 	//incement the current question number
 	currentQuestion++;
 
-	//clear checked
+	//once finished clear checked
 	selectedOption.checked = false;
 
 	//If quiz is on the final question
@@ -181,7 +181,6 @@ function loadNextQuestion() {
 	if (currentQuestion == totalQuestions) {
 		container.style.display = "none";
 		if (totalScore <= 8) {
-			//Reference: https://www.akc.org/expert-advice/lifestyle/great-breeds-first-time-owners/
 			result.innerHTML = `
             <div class="summary">
 			<h1>You should get a DOG</h1>
@@ -198,13 +197,10 @@ function loadNextQuestion() {
          `;
 		}
 		else if (totalScore <= 10) {
-			//  References:
-			//  <img class="petImg" src ="images/cat.jpg"></img>
-			//   https://blog.healthypawspetinsurance.com/8-best-cat-breeds-for-first-time-owners
 			result.innerHTML = `
             <div class="summary">
 			<h1>You should get a CAT</h1>
-			
+			<img class="petImg" src ="images/cat.jpg">
 			<p>If you're looking for a fun, smart and affectionate pet, make a cat your new BFF. Below are some of the best choices for someone looking to get their first cat.</p>
 			<h2>Maine Coon</h2>
 			<p>One of the largest of all the cat breeds, the Maine Coon is affectionate but not overly dependant. They enjoy following you around the house and get along with children and other pets. This breed has long hair that requires regular grooming. </p>
@@ -212,13 +208,11 @@ function loadNextQuestion() {
 			<p>Ragdolls are cuddly and affectionate cats that enjoy being around their people. Though they are quiet and docile, they also enjoy playtime. These breeds are polite and generally kid-friendly. Their long hair needs regular combing.</p>
 			<h2>Scottish Fold</h2>
 			<p>This smart kitty has a quirky personality and adorable folded ears. Scottish Fold cats are curious, outgoing, and enjoy following you around the house. Long-haired Folds should be combed weekly.</p>
-	       
 			</div>
         <button class="restart">Restart Quiz</button>
          `;
 		}
 		else if (totalScore <= 22) {
-			// Reference: https://bunnyislove.com/best-breed-of-rabbit-for-first-time-owners/
 			result.innerHTML = `
             <div class="summary">
 			<h1>You should get a RABBIT</h1>
@@ -235,8 +229,6 @@ function loadNextQuestion() {
          `;
 		}
 		else if (totalScore <= 16) {
-			// Reference: https://unsplash.com/photos/W5D__7paUa0/
-			// https://www.thomasvillevet.net/site/blog/2020/08/17/best-pet-birds
 			result.innerHTML = `
             <div class="summary">
 			<h1>You should get a BIRD</h1>
@@ -248,17 +240,14 @@ function loadNextQuestion() {
 			<p>These smart little parrots crave social interaction, and require an owner who can provide them with the time and attention they need in order to thrive and prevent loneliness or depression. Female cockatiels are as gentle as they come, and males are particularly good at mimicking sounds around them including phones, alarms and even outdoor birds. They need a huge cage with several toys and perches to keep them stimulated.</p>
 			<h2>Canary</h2>
 			<p>These lovely birds can be yellow or green, bright orange or brown. Known for their vibrant colour and ability to carry a tune, canaries are ideal if you're a beginner who isn't sure if they want a bird who requires a lot of attention. Though somewhat why and timid, canaries will need space to fly in order to stay happy and healthy, so you'll need a large flight space. Male canaries sing, while females do not.</p>
-	        //Reference:
-			</div>
+        </div>
         <button class="restart">Restart Quiz</button>
          `;
 		}
 		else if (totalScore >= 20) {
-			//Reference: https://unsplash.com/photos/6p0Lym68MSI/
-			//https://www.petsradar.com/features/five-popular-guinea-pig-breeds/
 			result.innerHTML = `
             <div class="summary">
-			<h1>You should get a GUINEA PIG</h1>
+			<h1>You should get a GUINEA PIGg</h1>
 			<img class="petImg" src ="images/guinea.jpg">
 			<p>There are many different guinea pig breeds, each of which has unique physical and personality characteristics. Below are some of the best guinea pig breeds for first-time owners. </p>
 			<h2>American/English guinea pig</h2>
@@ -267,18 +256,15 @@ function loadNextQuestion() {
 			<p>These guinea pigs have a distinct appearance, due to the presence of the rosettes in their fur. They are considered as high-energy breeds. If you're looking for a guinea pig who will thrive witch regular attention and training, an Abyssinian may be a great choice.</p>
 			<h2>Teddy guinea pig</h2>
 			<p> Teddy guinea pigs are known for being calm and friendly. Many Teddy guinea pigs are very tolerant of handling and may even enjoy cuddling with their owners. This makes them a good option for childern or first-time guinea pig owners. Their short coat requires minimal grooming, making them a relatively low-maintencance guinea pig breed. Their skin is prone to dryness, so frequent bathing is a problem for this breed.</p>
-			</div>
+        </div>
         <button class="restart">Restart Quiz</button>
          `;
 		}
-		else if (totalScore <= 20) 
-		// Reference: https://pixabay.com/photos/cute-small-portrait-golden-hamster-3161014/
-		// https://firsthamster.com/these-are-the-4-best-hamsters-for-beginners/
+		else if (totalScore <= 20) {
 			result.innerHTML = `
             <div class="summary">
-            <h1>You should get a hamster</h1>
+            <h1>You should get a HAMSTER</h1>
 			<img class="petImg" src ="images/hamster.jpg">
-			
 			<p>If you're looking for a cute and small pet, getting a hamster is a great choice. Below are some of the best hamsters for first-time owners.</p>
 			<h2>Syrian Hamster</h2>
 			<p>The Syrian hamster is also known as the golden hamster, and it is one of the most poular hamsters that people keep as pets. They make very good pets for beginners since they are easy to tame, fun to play with, and very low-maintenance. If you are looking for a hamster to bond with, you will have to look for some other type of hamster, because Syrian hamsters never really bond with their owners. Some might come closer when they see you and sleep on your hands.</p>
